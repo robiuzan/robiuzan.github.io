@@ -32,10 +32,19 @@ const WP_HOST = new URL(WP).host;
 console.log("WP source:", WP, "(host:", WP_HOST + ")");
 
 const UA = { "User-Agent": "Mozilla/5.0 (migration-snapshot)" };
-async function fetchText(url) {
-  const r = await fetch(url, { headers: UA });
-  if (!r.ok) throw new Error(`${r.status} ${url}`);
-  return await r.text();
+async function fetchText(url, tries = 3) {
+  let last;
+  for (let i = 1; i <= tries; i++) {
+    try {
+      const r = await fetch(url, { headers: UA });
+      if (!r.ok) throw new Error(`${r.status} ${url}`);
+      return await r.text();
+    } catch (e) {
+      last = e;
+      if (i < tries) await new Promise((res) => setTimeout(res, 1500 * i));
+    }
+  }
+  throw last;
 }
 async function fetchBuf(url) {
   const r = await fetch(url, { headers: UA });
@@ -261,39 +270,59 @@ async function processPage(meta, captureAssets) {
 }
 
 // ---- main -----------------------------------------------------------------
-async function getAllPages() {
+// Every PUBLIC content type with frontend permalinks. The site is a custom "gogo"
+// theme: besides core `pages`/`posts`, it registers `services` (/services/<slug>/),
+// `locations` (/locations/<slug>/) and `step` (/step/<slug>/ — price-calculator steps).
+// All render real themed pages on the live site, so all must be captured for 1:1.
+const CONTENT_TYPES = ["pages", "posts", "services", "locations", "step"];
+
+async function getAllContent() {
   const out = [];
-  let p = 1, totalPages = 1;
-  do {
-    const url = `${WP}/wp-json/wp/v2/pages?per_page=100&page=${p}&status=publish&orderby=menu_order&order=asc&_fields=id,slug,link,title,parent,menu_order,status`;
-    const r = await fetch(url, { headers: UA });
-    if (!r.ok) throw new Error(`pages ${r.status}`);
-    totalPages = parseInt(r.headers.get("x-wp-totalpages") || "1", 10);
-    const batch = await r.json();
-    for (const pg of batch) out.push({ id: pg.id, slug: pg.slug, link: pg.link, title: pg.title.rendered });
-    p++;
-  } while (p <= totalPages);
+  for (const base of CONTENT_TYPES) {
+    let p = 1, totalPages = 1, count = 0;
+    do {
+      const url = `${WP}/wp-json/wp/v2/${base}?per_page=100&page=${p}&status=publish&_fields=id,slug,link,title,status`;
+      const r = await fetch(url, { headers: UA });
+      if (!r.ok) { console.warn(`  ! ${base} page ${p} -> ${r.status} (skipping)`); break; }
+      totalPages = parseInt(r.headers.get("x-wp-totalpages") || "1", 10);
+      const batch = await r.json();
+      for (const pg of batch) out.push({ id: pg.id, slug: pg.slug, link: pg.link, title: pg.title.rendered, postType: base });
+      count += batch.length;
+      p++;
+    } while (p <= totalPages);
+    console.log(`  ${base}: ${count}`);
+  }
   return out;
 }
 
 async function main() {
   mkdirSync(CONTENT, { recursive: true });
-  const metas = await getAllPages();
-  console.log(`\nFound ${metas.length} pages. Snapshotting + vendoring assets...\n`);
+  console.log("Discovering content types:");
+  const metas = await getAllContent();
+  console.log(`\nFound ${metas.length} items. Snapshotting + vendoring assets...\n`);
 
   // process the front page first so we capture the shared CSS/JS chrome from it
   metas.sort((a, b) => (new URL(a.link).pathname === "/" ? -1 : 1));
 
   const pages = [];
+  const skipped = [];
   let sharedAssets = null;
   for (const meta of metas) {
-    const front = new URL(meta.link).pathname === "/";
     process.stdout.write(`  [${meta.id}] ${meta.title}  ${meta.link}\n`);
-    const { page, assets } = await processPage(meta, !sharedAssets);
-    if (assets && !sharedAssets) sharedAssets = assets;
-    pages.push(page);
+    try {
+      const { page, assets } = await processPage(meta, !sharedAssets);
+      if (assets && !sharedAssets) sharedAssets = assets;
+      pages.push(page);
+    } catch (e) {
+      console.warn(`      ! SKIPPED [${meta.id}] ${meta.link} -> ${e.message}`);
+      skipped.push({ id: meta.id, link: meta.link, error: String(e.message) });
+    }
   }
   pages.sort((a, b) => a.id - b.id);
+  if (skipped.length) {
+    console.log(`\n${skipped.length} page(s) skipped (broken on the source site):`);
+    for (const s of skipped) console.log(`   [${s.id}] ${s.link} (${s.error})`);
+  }
 
   const site = { wpUrl: WP, assets: sharedAssets, pages };
   writeFileSync(join(CONTENT, "site.json"), JSON.stringify(site, null, 2), "utf8");

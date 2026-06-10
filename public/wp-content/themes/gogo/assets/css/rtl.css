@@ -1,0 +1,521 @@
+body {
+	direction: rtl;
+  text-align: right;
+  font-family: 'Rubik', 'sans-serif';
+}
+h1,h2,h3,h4,h5,h6{font-family: 'Rubik', serif !important;}
+
+.owl-carousel {
+  direction: ltr;
+}
+.owl-dots {
+    justify-content: center;
+    display: flex;
+}
+.owl-carousel .owl-dots .owl-dot {
+  margin: 0 6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #AAAAAA;
+}
+.owl-carousel .owl-dots .owl-dot.active {
+  background: var(--acsent-color);
+}
+
+/*header*/
+
+.nav-bottom .menu {
+  margin-right: 0;
+  margin-left: 30px;
+}
+.nav-center .open-hours .caption, .nav-center .open-hours .value {
+  text-align: right;
+}
+.nav-center .header-location .header-svg-wrap,
+.nav-center .open-hours .header-svg-wrap {
+  margin-right: 0;
+  margin-left: 16px;
+}
+.nav-center .header-location a {
+  /*max-width: 135px;*/
+}
+.nav-center .phone-block__caption svg {
+  margin-right: 0;
+  margin-left: 9px;
+}
+.nav-bottom .menu > li > a .icon {
+  margin-left: 0;
+  margin-right: 12px;
+}
+.nav-bottom .menu > li.menu-item-has-children .sub-menu li a .pre-icon {
+  margin-right: 0;
+  margin-left: 7px;
+}
+.nav-bottom .menu .services-drop-down .pre-icon svg,
+.nav-bottom .menu .services-drop-down .pre-icon.pre-icon-arrow svg {
+  transform: rotate(180deg);
+}
+.nav-side .phone-block svg, .nav-main .phone-block svg {
+  margin-right: unset;
+  margin-left: 8px;
+}
+.nav-side__header .logo img {
+  max-width: 175px;
+}
+.nav-bottom .nav-toggle {
+  margin-right: 0;
+  margin-left: 16px;
+}
+.nav-side__close {
+  margin-right: 0;
+  margin-left: 16px;
+}
+.nav-side .menu > li > a .sub-menu-toggle {
+  right: unset;
+  left: 0;
+}
+.nav-side .header-svg-wrap {
+  margin-left: 16px;
+  margin-right: 0;
+}
+  
+
+/*footer*/
+
+.footer .footer-top .footer-info .info-list .info-item .icon {
+  margin-right: 0;
+  margin-left: 10px;
+}
+.footer .footer-top .footer-info .btn-link.btn-green {
+  white-space: nowrap;
+}
+.footer .ft-icon {
+  margin-right: 0;
+  margin-left: 12px;
+}
+
+/*section home hero*/
+
+.home-hero-label img {
+  margin-right: 0;
+  margin-left: 12px;
+}
+.home-hero-it img {
+  margin-right: 0;
+  margin-left: 16px;
+}
+.home-hero-left .video-preview {
+  margin-right: 0;
+  margin-left: 16px;
+}
+.block-home-hero {
+  /*margin-right: auto !important;
+  margin-left: unset !important;*/
+}
+.home-goole-box-wrap {
+  left: unset;
+  padding: 24px 0 0 24px;
+  border-radius: 0;
+  right: 0;
+}
+.home-hero-right .home-goole-box-wrap {
+	right: -90px;
+}
+.block-home-hero-text .btn-link span {
+  margin-right: 0;
+  margin-left: 10px;
+}
+.block-home-hero-text .btn-link svg {
+  transform: rotate(-90deg);
+}
+.block-home-hero-text .btn-link:hover svg {
+  transform: rotate(-135deg);
+}
+.home-hero-right-galley .gallery-item:first-child {
+  margin-top: 0;
+}
+.home-hero-right-galley .gallery-item:nth-child(4) {
+  margin-top: 0;
+}
+.home-hero-right-galley .gallery-item:nth-child(2) {
+  margin-top: 39px;
+}
+.home-hero-right-galley .gallery-item:nth-child(3) {
+  margin-top: -39px;
+}
+
+/* section-header-banner */
+
+.header-banner-right .home-google-box {
+  text-align: right;
+}
+.header-banner-right .home-goole-box-wrap {
+  padding: 0 0 15px 15px;
+  border-radius: 0;
+}
+
+/*section feedback*/
+
+.feedback-gallery .img-wrap:not(:last-child)::after {
+  right: unset;
+  left: 0;
+}
+.feedback-widget {
+  direction: ltr;
+}
+.feedback-widget .saswp-r .saswp-r2-b .saswp-rc-cnt {
+  text-align: right;
+  min-height: 51px;
+}
+.feedback-widget .saswp-r .saswp-sd {
+  justify-content: flex-start;
+  right: 0;
+  left: -6px;
+}
+.feedback-widget .saswp-r .saswp-rc {
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+}
+.feedback-widget .saswp-r .saswp-rc .saswp-rc-lg {
+  transform: translateX(-50%);
+}
+.widget-reviews-bot {
+  flex-direction: row-reverse;
+}
+.feedback-widget-sd .saswp-r .saswp-r2-b .saswp-rc-cnt {
+  text-align: right;
+}
+.saswp-rc-a img {
+  margin-right: 0;
+  margin-left: 16px;
+}
+.feedback-widget-sd .saswp-rvw-str {
+  left: unset;
+  right: 80px;
+}
+
+/*section location */
+
+.section-locations .locations .location-item .widget-wrapper {
+  direction: ltr;
+}
+.section-locations .locations .location-item .widget-wrapper .saswp-r .saswp-r2-b .saswp-rc-cnt {
+  text-align: right;
+}
+.section-locations .locations .location-item .widget-wrapper .saswp-r .saswp-rc {
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+.section-locations .locations .location-item .widget-wrapper .saswp-r .saswp-sd {
+  justify-content: flex-start;
+}
+.section-locations .locations .location-item .widget-wrapper .saswp-r .saswp-rc .saswp-rc-lg {
+  transform: translateX(-50%);
+}
+
+/*section sost calc*/
+
+.calc-title-top img {
+  margin-right: 0;
+  max-width: 44px;
+  margin-left: 16px;
+}
+.page-quiz .step-navigation .btn {
+  /*flex-direction: row-reverse;*/
+}
+.btn .icon:first-child {
+  /*margin-left: 0;
+  margin-right: 10px;*/
+  transform: scaleX(-1);
+}
+.quiz-step .selection-grid .step-select::before {
+  margin-left: 33px;
+  margin-right: 0;
+}
+.page-quiz .step-navigation .btn .caption {
+  font-family: 'Rubik', 'sans-serif';
+}
+.quiz-step.final .list-of-services li {
+  /*background: url('../img/checked.png') no-repeat;
+  background-position: right !important;
+  background-size: 24px !important;*/
+  padding-left: 0;
+  padding-right: 36px;
+}
+.quiz-step.final .list-of-services li svg {
+  left: unset;
+  right: 0;
+}
+.quiz-step .btn-wrap a svg {
+  margin-right: 0;
+  margin-left: 12px;
+}
+.quiz-step.final .info-notice ul li {
+  padding-left: 0;
+  color: #000;
+  padding-right: 20px;
+}
+.quiz-step.final .info-notice ul li::after {
+  top: 10px;
+  right: 3px;
+}
+.quiz-step.final .post-content {
+  color: #000;
+}
+
+/*section-coupons-slider*/
+
+.form-wrap-bar img {
+  margin-right: 0;
+  margin-left: 16px;
+}
+.form-talk-to-expert .form-title {
+  text-align: right;
+}
+.s-serv-form .form-talk-to-expert .work-time .icon {
+  margin-right: 0;
+  margin-left: 12px;
+}
+.s-serv-form .form-wrap .wpcf7 form .wpcf7-text, 
+.s-serv-form .form-wrap .wpcf7 form .wpcf7-textarea {
+  text-align: right;
+}
+.s-serv-form .form-wrap .wpcf7 form button[type="submit"] {
+  font-family: 'Rubik', 'sans-serif';
+}
+.coupon-discont {
+  left: -3px;
+  right: unset;
+}
+.coupon-discont svg {
+  margin-right: 0;
+  margin-left: 12px;
+}
+.coupon-modal .text,
+.coupon-modal h4,
+.coupon-modal .modal-title {
+  text-align: right;
+}
+.coupon-modal .coupon-discont-modal {
+  text-align: left;
+}
+.form-wrap .wpcf7 form .wpcf7-select, 
+.form-wrap .wpcf7 form .wpcf7-date, 
+.form-wrap .wpcf7 form .wpcf7-text,
+.form-wrap .wpcf7 form .wpcf7-textarea {
+  text-align: right;
+}
+.coupon-one .exp-date, .coupon-meta {
+  text-align: right;
+}
+
+ 
+/*serv-contact*/
+
+.serv-contact-pw .btn-link {
+  padding: 0 15px;
+}
+.serv-contact-pw .btn-link svg {
+  margin-right: 0;
+  margin-left: 12px;
+}
+.offer-wrap h4 {
+  margin-right: 0;
+  margin-left: 58px;
+}
+.offer-list li svg {
+  margin-right: 0;
+  margin-left: 20px;
+}
+
+
+/*serv-list*/
+
+.section-services-list .service-item .caption {
+  font-size: 20px;
+  font-weight: 20px;
+  margin-left: 0;
+  transition: all .3s ease;
+  margin-right: 12px;
+}
+.s-services-list .offer-list > a svg {
+  margin-right: 0;
+  margin-left: 20px;
+}
+
+/*section-faq*/
+
+.section-faq .btn-row a svg {
+  margin-right: 0;
+  margin-left: 12px;
+}
+.section-faq .btn-row a {
+  font-weight: 700;
+  min-width: 260px;
+  padding: 0 15px;
+}
+
+/*section-advantages*/
+
+.section-advantages .grid-wrap .grid-item .icon {
+  margin-right: 0;
+  margin-left: 0;
+}
+.section-advantages .grid-wrap .grid-item .grid-item-top {
+  text-align: right;
+}
+
+
+/* section-marquee */
+
+.section-marquee {
+  direction: ltr;
+}
+
+
+/* section-areas */
+
+.section-areas .location-list .location-item .caption {
+  margin-left: 0;
+  margin-right: 16px;
+} 
+
+
+/* cta-section */
+
+.cta-section .btn svg {
+  margin-right: 0;
+  margin-left: 12px;
+}
+.cta-box-img {
+  margin-right: 0;
+  margin-left: 24px;
+}
+.btn-link svg {
+  margin-right: 0;
+  margin-left: 12px;
+}
+
+/* section location banner */
+
+.section-location-banner .col-left .gallery-list .img-wrap img {
+  object-fit: cover;
+}
+.section-location-banner .col-left .section-content ul li {
+  padding-left: 0;
+  padding-right: 32px;
+}
+.section-location-banner .col-left .section-content ul li::before {
+	left: unset;
+	right: 0;
+}
+
+.location-hero-map img {
+  margin-right: 0;
+  margin-left: 16px;
+}
+.feedback-location-item .icon-loc {
+  margin-left: auto;
+}
+.feedback-location-item-bot {
+  flex-direction: row-reverse;
+}
+.feedback-location-item-bot img {
+  transform: translateX(-100%);
+}
+.feedback-location-slider .owl-dots {
+  justify-content: flex-start;
+}
+
+/* section-header-banner */
+
+.section-header-banner .btn-yellow svg {
+  margin-right: 0;
+  margin-left: 12px;
+}
+.section-header-banner .btn-yellow {
+  font-weight: 700;
+}
+
+
+/* section-services-list widget */
+
+.widget-posts .posts-list .post-related .post-info {
+  padding: 10px 20px 10px 10px;
+}
+.btn-link .icon {
+  margin-left: 0;
+  margin-right: 10px;
+}
+.widget-posts .btn-link .icon svg {
+	transform: rotate(180deg);
+}
+.widget-posts .btn-link:hover .icon {
+    transform: translateY(4%) translatex(-10px);
+}
+
+
+/* single post */
+
+.post-template-single .section-post-hero .post-meta .meta-item .icon {
+  margin-right: 0;
+  margin-left: 10px;
+}
+.post-template-single .section-post-content .col-right .sidebar {
+  border-right: 1px solid var(--color-light-grey);
+  padding-left: 0;
+  padding-right: 40px;
+  border-left: none;
+}
+.post-template-single .section-post-content .col-right {
+  margin-left: 0;
+  margin-right: 40px;
+}
+.post-template-single .section-post-content .col-left .author-block__info {
+  padding-left: 0;
+  padding-right: 30px;
+}
+
+
+/* cta-line-section */
+
+.cta-line-section .left-part .list-item .icon {
+  margin-right: 0;
+  margin-left: 8px;
+}
+.cta-line-section .divider {
+  transform: rotate(180deg);
+}
+
+
+/* GUTENBERG */
+
+.form-talk-to-expert .work-time .icon {
+  margin-right: 0;
+  margin-left: 6px;
+}
+.sidebar .services-widget .service-item .icon svg {
+  transform: rotate(180deg);
+}
+
+
+/* section-gutenberg */
+
+.edit-post-visual-editor ul, .edit-post-visual-editor ol, .post-content ul, .post-content ol, .text ul, .text ol {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+/* section-contact */
+
+.section-contact .col-left .section-content {
+  text-align: right;
+}
+
+
+/* s-serv-contact */
+
+.serv-contact-pw .btn-link {
+  white-space: nowrap;
+}

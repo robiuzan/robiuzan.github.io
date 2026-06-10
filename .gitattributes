@@ -1,0 +1,4 @@
+# Faithful 1:1 migration: preserve the EXACT bytes of every vendored asset and source
+# file. Disable all end-of-line conversion so binaries (fonts, images, .ico) and the
+# scraped HTML/CSS/JS are never mangled by autocrlf on any platform.
+* -text

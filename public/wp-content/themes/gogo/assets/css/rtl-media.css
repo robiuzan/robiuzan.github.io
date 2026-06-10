@@ -1,0 +1,33 @@
+
+@media (max-width: 1440px) { 
+	.nav-side .header-location svg,
+	/*.nav-side .open-hours svg {margin-left: 12px;}*/
+}
+
+@media (max-width: 1200px) { 
+	.quiz-step .selection-grid .step-select:before {margin-left: 12px;margin-right: 0;}
+	.coupon-modal .coupon-discont-modal-mob .coupon-discont {right: unset;left: 0;}
+	.serv-contact-pw .btn-link {margin-left: 0;margin-right: 20px;font-size: 13px;font-weight: 700;}
+	.section-faq .btn-row a {min-width: unset !important;}
+	.post-template-single .section-post-content .col-right .sidebar {border-left: none;border-right: none;padding-left: 0;padding-right: 0;}
+	.post-template-single .section-post-content .col-right {margin-left: 0;margin-right: 0;}
+	
+}
+
+@media (max-width: 991.98px) { 
+	.block-home-hero {margin-right: unset !important;}
+	.sidebar .services-widget {width: 100%;}
+}
+
+@media (max-width: 767.98px) {
+	.nav-center .logo {left: unset;right: 65px;}
+	.nav-side__header .logo img {max-width: 130px;}
+	.serv-contact-pw .btn-link {font-size: 16px;margin-left: 0;margin-right: 0;}
+	.footer .footer-top .footer-info .info-list .info-item .caption {font-size: 16px;}
+	.feedback-widget .saswp-r .saswp-sd {top: -38px;}
+	.section-advantages .section-caption span {min-height: 41px;height: unset;text-align: center;}
+	.home-hero-right .home-goole-box-wrap {border-radius: 15px;padding: 0;right: -35px;bottom: 20px;} 
+	.serv-contact-pw {text-align: right;}
+	.edit-post-visual-editor ul, .edit-post-visual-editor ol, .post-content ul, .post-content ol, .text ul, .text ol {padding: 0;}
+
+}

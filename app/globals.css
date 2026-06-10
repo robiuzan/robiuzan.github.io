@@ -1,0 +1,15 @@
+/*
+ * Faithful 1:1 port — Tailwind's THEME LAYER is intentionally NOT imported.
+ *
+ * Tailwind v4's `tailwindcss/theme.css` dumps default design tokens onto :root, including
+ * `--color-white:#fff` and `--color-black:#000`. Those leak globally and OVERRIDE CSS
+ * variables that the original "gogo" theme relies on being UNDEFINED — e.g. the active nav
+ * item is styled `color: var(--color-white)` as an intentional invalid-var fallback that
+ * should inherit the dark body color. With Tailwind defining `--color-white`, the active
+ * item turned white-on-white and vanished. (Verified via computed styles vs. the live site.)
+ *
+ * The ported content is styled entirely by the vendored gogo CSS, so we import ONLY the
+ * utilities layer (which emits nothing unless a utility class is actually used) and never
+ * preflight or theme. This keeps Tailwind available without polluting the cascade.
+ */
+@import "tailwindcss/utilities.css" layer(utilities);

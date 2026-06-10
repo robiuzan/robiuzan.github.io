@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "snapshot": "node scripts/scrape.mjs"
+    "snapshot": "node scripts/scrape.mjs && node scripts/transform.mjs"
   },
   "dependencies": {
     "he": "^1.2.0",

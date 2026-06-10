@@ -93,7 +93,10 @@ export function buildMetadata(seo: SeoData): Metadata {
   if (description) md.description = description;
 
   if (seo.canonical) md.alternates = { canonical: seo.canonical };
-  if (seo.robots) md.robots = seo.robots;
+  // Production: make the live site indexable. The source WordPress is set to
+  // `noindex, nofollow` (captured in seo.robots); per the site owner we override that so
+  // Google can index the migrated site. (Was: `if (seo.robots) md.robots = seo.robots`.)
+  md.robots = { index: true, follow: true };
 
   const og: Record<string, unknown> = {};
   const ogTitle = dec(seo.ogTitle);

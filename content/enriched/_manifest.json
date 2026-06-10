@@ -1,0 +1,1235 @@
+{
+  "referenceId": 95,
+  "count": 51,
+  "lookup": {
+    "1": {
+      "path": "/hello-world/",
+      "title": "Hello world!"
+    },
+    "2": {
+      "path": "/sample-page/",
+      "title": "Sample Page"
+    },
+    "7": {
+      "path": "/",
+      "title": "עמוד הבית"
+    },
+    "50": {
+      "path": "/step/%d7%9e%d7%97%d7%a9%d7%91%d7%95%d7%9f-%d7%9e%d7%97%d7%99%d7%a8%d7%99%d7%9d-%d7%9c%d7%9e%d7%a0%d7%a2%d7%95%d7%9c%d7%9f/",
+      "title": "מחשבון מחירים למנעולן"
+    },
+    "51": {
+      "path": "/step/%d7%a9%d7%9c%d7%91-2-%d7%a1%d7%95%d7%92-%d7%94%d7%aa%d7%99%d7%a7%d7%95%d7%9f/",
+      "title": "שלב 2: סוג התיקון"
+    },
+    "52": {
+      "path": "/step/%d7%a9%d7%9c%d7%91-3-%d7%a4%d7%a8%d7%98%d7%99-%d7%aa%d7%99%d7%a7%d7%95%d7%9f-%d7%9e%d7%a0%d7%a2%d7%95%d7%9c-%d7%a8%d7%9b%d7%91/",
+      "title": "שלב 3: פרטי תיקון מנעול רכב"
+    },
+    "53": {
+      "path": "/step/%d7%a9%d7%9c%d7%91-3-%d7%a4%d7%a8%d7%98%d7%99-%d7%aa%d7%99%d7%a7%d7%95%d7%9f-%d7%93%d7%9c%d7%aa/",
+      "title": "שלב 3: פרטי תיקון דלת"
+    },
+    "77": {
+      "path": "/%d7%9e%d7%a0%d7%a2%d7%95%d7%9c%d7%9f-%d7%a8%d7%9b%d7%91/",
+      "title": "מנעולן רכב"
+    },
+    "78": {
+      "path": "/%d7%9e%d7%a0%d7%a2%d7%95%d7%9c%d7%9f-%d7%9c%d7%91%d7%99%d7%aa/",
+      "title": "מנעולן לבית"
+    },
+    "79": {
+      "path": "/%d7%90%d7%95%d7%93%d7%95%d7%aa%d7%99%d7%a0%d7%95/",
+      "title": "אודותינו"
+    },
+    "80": {
+      "path": "/%d7%9e%d7%97%d7%99%d7%a8%d7%95%d7%9f/",
+      "title": "מחירון"
+    },
+    "93": {
+      "path": "/services/%d7%9e%d7%a0%d7%a2%d7%95%d7%9c%d7%9f-%d7%a8%d7%9b%d7%91/",
+      "title": "מנעולן רכב"
+    },
+    "94": {
+      "path": "/services/%d7%9e%d7%a0%d7%a2%d7%95%d7%9c%d7%9f-%d7%9c%d7%91%d7%99%d7%aa/",
+      "title": "מנעולן לבית"
+    },
+    "95": {
+      "path": "/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%9c%d7%a8%d7%9b%d7%91/",
+      "title": "שכפול מפתח לרכב"
+    },
+    "96": {
+      "path": "/services/%d7%a9%d7%97%d7%96%d7%95%d7%a8-%d7%9e%d7%a4%d7%aa%d7%97-%d7%9c%d7%a8%d7%9b%d7%91/",
+      "title": "שחזור מפתח לרכב"
+    },
+    "97": {
+      "path": "/services/%d7%a7%d7%95%d7%93%d7%9f-%d7%9c%d7%a8%d7%9b%d7%91/",
+      "title": "קודן לרכב"
+    },
+    "98": {
+      "path": "/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%a7%d7%99%d7%94/",
+      "title": "שכפול מפתח לקיה"
+    },
+    "99": {
+      "path": "/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%9c%d7%a4%d7%95%d7%a8%d7%93/",
+      "title": "שכפול מפתח לפורד"
+    },
+    "100": {
+      "path": "/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%9c%d7%a1%d7%a7%d7%95%d7%93%d7%94/",
+      "title": "שכפול מפתח לסקודה"
+    },
+    "101": {
+      "path": "/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%9c%d7%a9%d7%91%d7%a8%d7%95%d7%9c%d7%98/",
+      "title": "שכפול מפתח לשברולט"
+    },
+    "105": {
+      "path": "/%d7%90%d7%96%d7%95%d7%a8%d7%99-%d7%a9%d7%99%d7%a8%d7%95%d7%aa/",
+      "title": "אזורי שירות"
+    },
+    "109": {
+      "path": "/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%a1%d7%95%d7%96%d7%95%d7%a7%d7%99/",
+      "title": "שכפול מפתח סוזוקי"
+    },
+    "113": {
+      "path": "/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%a9%d7%9c%d7%98-%d7%9c%d7%a8%d7%9b%d7%91-2/",
+      "title": "שכפול שלט לרכב"
+    },
+    "115": {
+      "path": "/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%a9%d7%9c%d7%98-%d7%9c%d7%a8%d7%9b%d7%91/",
+      "title": "שכפול שלט לרכב"
+    },
+    "117": {
+      "path": "/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%a8%d7%a0%d7%95/",
+      "title": "שכפול מפתח רנו"
+    },
+    "118": {
+      "path": "/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%98%d7%95%d7%99%d7%95%d7%98%d7%94/",
+      "title": "שכפול מפתח טויוטה"
+    },
+    "119": {
+      "path": "/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%9e%d7%90%d7%96%d7%93%d7%94/",
+      "title": "שכפול מפתח מאזדה"
+    },
+    "120": {
+      "path": "/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%a1%d7%99%d7%98%d7%a8%d7%95%d7%90%d7%9f/",
+      "title": "שכפול מפתח סיטרואן"
+    },
+    "121": {
+      "path": "/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%a4%d7%99%d7%92%d7%95/",
+      "title": "שכפול מפתח פיג'ו"
+    },
+    "122": {
+      "path": "/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%99%d7%95%d7%a0%d7%93%d7%90%d7%99/",
+      "title": "שכפול מפתח יונדאי"
+    },
+    "123": {
+      "path": "/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%9e%d7%99%d7%a6%d7%95%d7%91%d7%99%d7%a9%d7%99/",
+      "title": "שכפול מפתח מיצובישי"
+    },
+    "124": {
+      "path": "/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%a1%d7%95%d7%91%d7%90%d7%a8%d7%95/",
+      "title": "שכפול מפתח סובארו"
+    },
+    "125": {
+      "path": "/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%9e%d7%a8%d7%a6%d7%93%d7%a1/",
+      "title": "שכפול מפתח מרצדס"
+    },
+    "126": {
+      "path": "/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%94%d7%95%d7%a0%d7%93%d7%94/",
+      "title": "שכפול מפתח הונדה"
+    },
+    "127": {
+      "path": "/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%90%d7%95%d7%a4%d7%9c/",
+      "title": "שכפול מפתח אופל"
+    },
+    "128": {
+      "path": "/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%91%d7%9e%d7%95%d7%95/",
+      "title": "שכפול מפתח במוו"
+    },
+    "129": {
+      "path": "/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%a4%d7%95%d7%9c%d7%a7%d7%a1%d7%95%d7%95%d7%92%d7%9f/",
+      "title": "שכפול מפתח פולקסווגן"
+    },
+    "137": {
+      "path": "/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%aa%d7%9c-%d7%90%d7%91%d7%99%d7%91/",
+      "title": "שכפול מפתח בתל אביב"
+    },
+    "138": {
+      "path": "/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%a7%d7%a8%d7%99%d7%95%d7%aa/",
+      "title": "שכפול מפתח בקריות"
+    },
+    "139": {
+      "path": "/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%97%d7%93%d7%a8%d7%94/",
+      "title": "שכפול מפתח בחדרה"
+    },
+    "140": {
+      "path": "/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%91%d7%a0%d7%aa%d7%a0%d7%99%d7%94/",
+      "title": "שכפול מפתח בנתניה"
+    },
+    "141": {
+      "path": "/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%97%d7%99%d7%a4%d7%94/",
+      "title": "שכפול מפתח בחיפה"
+    },
+    "142": {
+      "path": "/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%a4%d7%aa%d7%97-%d7%aa%d7%a7%d7%95%d7%95%d7%94/",
+      "title": "שכפול מפתח בפתח תקווה"
+    },
+    "143": {
+      "path": "/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%91%d7%aa-%d7%99%d7%9d/",
+      "title": "שכפול מפתח בת ים"
+    },
+    "144": {
+      "path": "/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%91%d7%90%d7%a8-%d7%a9%d7%91%d7%a2/",
+      "title": "שכפול מפתח באר שבע"
+    },
+    "146": {
+      "path": "/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%91%d7%99%d7%a8%d7%95%d7%a9%d7%9c%d7%99%d7%9d/",
+      "title": "שכפול מפתח בירושלים"
+    },
+    "147": {
+      "path": "/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97%d7%95%d7%aa-%d7%97%d7%95%d7%9c%d7%95%d7%9f/",
+      "title": "שכפול מפתחות בחולון"
+    },
+    "148": {
+      "path": "/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97%d7%95%d7%aa-%d7%9b%d7%a4%d7%a8-%d7%a1%d7%91%d7%90/",
+      "title": "שכפול מפתחות בכפר סבא"
+    },
+    "149": {
+      "path": "/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97%d7%95%d7%aa-%d7%91%d7%a0%d7%aa%d7%a0%d7%99%d7%94/",
+      "title": "שכפול מפתחות נתניה"
+    },
+    "150": {
+      "path": "/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%a8%d7%90%d7%a9%d7%95%d7%9f-%d7%9c%d7%a6%d7%99%d7%95%d7%9f/",
+      "title": "שכפול מפתח בראשון לציון"
+    },
+    "151": {
+      "path": "/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%97%d7%95%d7%9c%d7%95%d7%9f/",
+      "title": "שכפול מפתח בחולון"
+    },
+    "153": {
+      "path": "/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%a8%d7%9e%d7%aa-%d7%92%d7%9f/",
+      "title": "שכפול מפתח ברמת גן"
+    },
+    "154": {
+      "path": "/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%92%d7%91%d7%a2%d7%aa%d7%99%d7%99%d7%9d/",
+      "title": "שכפול מפתח בגבעתיים"
+    },
+    "158": {
+      "path": "/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97%d7%95%d7%aa-%d7%a8%d7%a2%d7%a0%d7%a0%d7%94/",
+      "title": "שכפול מפתחות ברעננה"
+    },
+    "189": {
+      "path": "/%d7%a7%d7%95%d7%93%d7%9f-%d7%9c%d7%a8%d7%9b%d7%91/",
+      "title": "קודן לרכב"
+    },
+    "192": {
+      "path": "/services/%d7%93%d7%9c%d7%aa-%d7%a4%d7%9c%d7%93%d7%9c%d7%aa/",
+      "title": "דלת פלדלת"
+    },
+    "193": {
+      "path": "/services/%d7%93%d7%9c%d7%aa-%d7%9e%d7%9e%d7%93/",
+      "title": "דלת ממד"
+    },
+    "194": {
+      "path": "/services/%d7%9e%d7%a0%d7%a2%d7%95%d7%9c-%d7%a8%d7%91-%d7%91%d7%a8%d7%99%d7%97/",
+      "title": "מנעול רב בריח"
+    },
+    "196": {
+      "path": "/services/%d7%9e%d7%95%d7%9c%d7%98%d7%99%d7%9c%d7%95%d7%a7/",
+      "title": "מולטילוק"
+    }
+  },
+  "pages": [
+    {
+      "id": 77,
+      "kind": "core",
+      "title": "מנעולן רכב",
+      "keyword": "מנעולן רכב",
+      "path": "/%d7%9e%d7%a0%d7%a2%d7%95%d7%9c%d7%9f-%d7%a8%d7%9b%d7%91/",
+      "canonical": "https://3locksmiths.co.il/%d7%9e%d7%a0%d7%a2%d7%95%d7%9c%d7%9f-%d7%a8%d7%9b%d7%91/",
+      "relatedServices": [
+        93,
+        94,
+        96,
+        97,
+        95
+      ],
+      "relatedLocations": [
+        137,
+        138,
+        139
+      ]
+    },
+    {
+      "id": 78,
+      "kind": "core",
+      "title": "מנעולן לבית",
+      "keyword": "מנעולן לבית",
+      "path": "/%d7%9e%d7%a0%d7%a2%d7%95%d7%9c%d7%9f-%d7%9c%d7%91%d7%99%d7%aa/",
+      "canonical": "https://3locksmiths.co.il/%d7%9e%d7%a0%d7%a2%d7%95%d7%9c%d7%9f-%d7%9c%d7%91%d7%99%d7%aa/",
+      "relatedServices": [
+        93,
+        94,
+        96,
+        97,
+        95
+      ],
+      "relatedLocations": [
+        137,
+        138,
+        139
+      ]
+    },
+    {
+      "id": 79,
+      "kind": "core",
+      "title": "אודותינו",
+      "keyword": "אודותינו",
+      "path": "/%d7%90%d7%95%d7%93%d7%95%d7%aa%d7%99%d7%a0%d7%95/",
+      "canonical": "https://3locksmiths.co.il/%d7%90%d7%95%d7%93%d7%95%d7%aa%d7%99%d7%a0%d7%95/",
+      "relatedServices": [
+        93,
+        94,
+        96,
+        97,
+        95
+      ],
+      "relatedLocations": [
+        137,
+        138,
+        139
+      ]
+    },
+    {
+      "id": 80,
+      "kind": "core",
+      "title": "מחירון",
+      "keyword": "מחירון",
+      "path": "/%d7%9e%d7%97%d7%99%d7%a8%d7%95%d7%9f/",
+      "canonical": "https://3locksmiths.co.il/%d7%9e%d7%97%d7%99%d7%a8%d7%95%d7%9f/",
+      "relatedServices": [
+        93,
+        94,
+        96,
+        97,
+        95
+      ],
+      "relatedLocations": [
+        137,
+        138,
+        139
+      ]
+    },
+    {
+      "id": 93,
+      "kind": "service",
+      "title": "מנעולן רכב",
+      "keyword": "מנעולן רכב",
+      "path": "/services/%d7%9e%d7%a0%d7%a2%d7%95%d7%9c%d7%9f-%d7%a8%d7%9b%d7%91/",
+      "canonical": "https://3locksmiths.co.il/services/%d7%9e%d7%a0%d7%a2%d7%95%d7%9c%d7%9f-%d7%a8%d7%9b%d7%91/",
+      "relatedServices": [
+        94,
+        96,
+        97,
+        115,
+        192,
+        95
+      ],
+      "relatedLocations": []
+    },
+    {
+      "id": 94,
+      "kind": "service",
+      "title": "מנעולן לבית",
+      "keyword": "מנעולן לבית",
+      "path": "/services/%d7%9e%d7%a0%d7%a2%d7%95%d7%9c%d7%9f-%d7%9c%d7%91%d7%99%d7%aa/",
+      "canonical": "https://3locksmiths.co.il/services/%d7%9e%d7%a0%d7%a2%d7%95%d7%9c%d7%9f-%d7%9c%d7%91%d7%99%d7%aa/",
+      "relatedServices": [
+        93,
+        96,
+        97,
+        115,
+        192,
+        95
+      ],
+      "relatedLocations": []
+    },
+    {
+      "id": 96,
+      "kind": "service",
+      "title": "שחזור מפתח לרכב",
+      "keyword": "שחזור מפתח לרכב",
+      "path": "/services/%d7%a9%d7%97%d7%96%d7%95%d7%a8-%d7%9e%d7%a4%d7%aa%d7%97-%d7%9c%d7%a8%d7%9b%d7%91/",
+      "canonical": "https://3locksmiths.co.il/services/%d7%a9%d7%97%d7%96%d7%95%d7%a8-%d7%9e%d7%a4%d7%aa%d7%97-%d7%9c%d7%a8%d7%9b%d7%91/",
+      "relatedServices": [
+        93,
+        94,
+        97,
+        115,
+        192,
+        95
+      ],
+      "relatedLocations": []
+    },
+    {
+      "id": 97,
+      "kind": "service",
+      "title": "קודן לרכב",
+      "keyword": "קודן לרכב",
+      "path": "/services/%d7%a7%d7%95%d7%93%d7%9f-%d7%9c%d7%a8%d7%9b%d7%91/",
+      "canonical": "https://3locksmiths.co.il/services/%d7%a7%d7%95%d7%93%d7%9f-%d7%9c%d7%a8%d7%9b%d7%91/",
+      "relatedServices": [
+        93,
+        94,
+        96,
+        115,
+        192,
+        95
+      ],
+      "relatedLocations": []
+    },
+    {
+      "id": 98,
+      "kind": "brand-key",
+      "title": "שכפול מפתח לקיה",
+      "keyword": "שכפול מפתח לקיה",
+      "path": "/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%a7%d7%99%d7%94/",
+      "canonical": "https://3locksmiths.co.il/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%a7%d7%99%d7%94/",
+      "brand": "קיה",
+      "relatedServices": [
+        99,
+        100,
+        101,
+        109,
+        117,
+        95
+      ],
+      "relatedLocations": []
+    },
+    {
+      "id": 99,
+      "kind": "brand-key",
+      "title": "שכפול מפתח לפורד",
+      "keyword": "שכפול מפתח לפורד",
+      "path": "/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%9c%d7%a4%d7%95%d7%a8%d7%93/",
+      "canonical": "https://3locksmiths.co.il/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%9c%d7%a4%d7%95%d7%a8%d7%93/",
+      "brand": "פורד",
+      "relatedServices": [
+        98,
+        100,
+        101,
+        109,
+        117,
+        95
+      ],
+      "relatedLocations": []
+    },
+    {
+      "id": 100,
+      "kind": "brand-key",
+      "title": "שכפול מפתח לסקודה",
+      "keyword": "שכפול מפתח לסקודה",
+      "path": "/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%9c%d7%a1%d7%a7%d7%95%d7%93%d7%94/",
+      "canonical": "https://3locksmiths.co.il/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%9c%d7%a1%d7%a7%d7%95%d7%93%d7%94/",
+      "brand": "סקודה",
+      "relatedServices": [
+        98,
+        99,
+        101,
+        109,
+        117,
+        95
+      ],
+      "relatedLocations": []
+    },
+    {
+      "id": 101,
+      "kind": "brand-key",
+      "title": "שכפול מפתח לשברולט",
+      "keyword": "שכפול מפתח לשברולט",
+      "path": "/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%9c%d7%a9%d7%91%d7%a8%d7%95%d7%9c%d7%98/",
+      "canonical": "https://3locksmiths.co.il/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%9c%d7%a9%d7%91%d7%a8%d7%95%d7%9c%d7%98/",
+      "brand": "שברולט",
+      "relatedServices": [
+        98,
+        99,
+        100,
+        109,
+        117,
+        95
+      ],
+      "relatedLocations": []
+    },
+    {
+      "id": 105,
+      "kind": "core",
+      "title": "אזורי שירות",
+      "keyword": "אזורי שירות",
+      "path": "/%d7%90%d7%96%d7%95%d7%a8%d7%99-%d7%a9%d7%99%d7%a8%d7%95%d7%aa/",
+      "canonical": "https://3locksmiths.co.il/%d7%90%d7%96%d7%95%d7%a8%d7%99-%d7%a9%d7%99%d7%a8%d7%95%d7%aa/",
+      "relatedServices": [
+        93,
+        94,
+        96,
+        97,
+        95
+      ],
+      "relatedLocations": [
+        137,
+        138,
+        139
+      ]
+    },
+    {
+      "id": 109,
+      "kind": "brand-key",
+      "title": "שכפול מפתח סוזוקי",
+      "keyword": "שכפול מפתח סוזוקי",
+      "path": "/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%a1%d7%95%d7%96%d7%95%d7%a7%d7%99/",
+      "canonical": "https://3locksmiths.co.il/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%a1%d7%95%d7%96%d7%95%d7%a7%d7%99/",
+      "brand": "סוזוקי",
+      "relatedServices": [
+        98,
+        99,
+        100,
+        101,
+        117,
+        95
+      ],
+      "relatedLocations": []
+    },
+    {
+      "id": 113,
+      "kind": "core",
+      "title": "שכפול שלט לרכב",
+      "keyword": "שכפול שלט לרכב",
+      "path": "/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%a9%d7%9c%d7%98-%d7%9c%d7%a8%d7%9b%d7%91-2/",
+      "canonical": "https://3locksmiths.co.il/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%a9%d7%9c%d7%98-%d7%9c%d7%a8%d7%9b%d7%91-2/",
+      "relatedServices": [
+        93,
+        94,
+        96,
+        97,
+        95
+      ],
+      "relatedLocations": [
+        137,
+        138,
+        139
+      ]
+    },
+    {
+      "id": 115,
+      "kind": "service",
+      "title": "שכפול שלט לרכב",
+      "keyword": "שכפול שלט לרכב",
+      "path": "/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%a9%d7%9c%d7%98-%d7%9c%d7%a8%d7%9b%d7%91/",
+      "canonical": "https://3locksmiths.co.il/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%a9%d7%9c%d7%98-%d7%9c%d7%a8%d7%9b%d7%91/",
+      "relatedServices": [
+        93,
+        94,
+        96,
+        97,
+        192,
+        95
+      ],
+      "relatedLocations": []
+    },
+    {
+      "id": 117,
+      "kind": "brand-key",
+      "title": "שכפול מפתח רנו",
+      "keyword": "שכפול מפתח רנו",
+      "path": "/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%a8%d7%a0%d7%95/",
+      "canonical": "https://3locksmiths.co.il/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%a8%d7%a0%d7%95/",
+      "brand": "רנו",
+      "relatedServices": [
+        98,
+        99,
+        100,
+        101,
+        109,
+        95
+      ],
+      "relatedLocations": []
+    },
+    {
+      "id": 118,
+      "kind": "brand-key",
+      "title": "שכפול מפתח טויוטה",
+      "keyword": "שכפול מפתח טויוטה",
+      "path": "/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%98%d7%95%d7%99%d7%95%d7%98%d7%94/",
+      "canonical": "https://3locksmiths.co.il/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%98%d7%95%d7%99%d7%95%d7%98%d7%94/",
+      "brand": "טויוטה",
+      "relatedServices": [
+        98,
+        99,
+        100,
+        101,
+        109,
+        95
+      ],
+      "relatedLocations": []
+    },
+    {
+      "id": 119,
+      "kind": "brand-key",
+      "title": "שכפול מפתח מאזדה",
+      "keyword": "שכפול מפתח מאזדה",
+      "path": "/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%9e%d7%90%d7%96%d7%93%d7%94/",
+      "canonical": "https://3locksmiths.co.il/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%9e%d7%90%d7%96%d7%93%d7%94/",
+      "brand": "מאזדה",
+      "relatedServices": [
+        98,
+        99,
+        100,
+        101,
+        109,
+        95
+      ],
+      "relatedLocations": []
+    },
+    {
+      "id": 120,
+      "kind": "brand-key",
+      "title": "שכפול מפתח סיטרואן",
+      "keyword": "שכפול מפתח סיטרואן",
+      "path": "/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%a1%d7%99%d7%98%d7%a8%d7%95%d7%90%d7%9f/",
+      "canonical": "https://3locksmiths.co.il/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%a1%d7%99%d7%98%d7%a8%d7%95%d7%90%d7%9f/",
+      "brand": "סיטרואן",
+      "relatedServices": [
+        98,
+        99,
+        100,
+        101,
+        109,
+        95
+      ],
+      "relatedLocations": []
+    },
+    {
+      "id": 121,
+      "kind": "brand-key",
+      "title": "שכפול מפתח פיג'ו",
+      "keyword": "שכפול מפתח פיג'ו",
+      "path": "/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%a4%d7%99%d7%92%d7%95/",
+      "canonical": "https://3locksmiths.co.il/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%a4%d7%99%d7%92%d7%95/",
+      "brand": "פיג'ו",
+      "relatedServices": [
+        98,
+        99,
+        100,
+        101,
+        109,
+        95
+      ],
+      "relatedLocations": []
+    },
+    {
+      "id": 122,
+      "kind": "brand-key",
+      "title": "שכפול מפתח יונדאי",
+      "keyword": "שכפול מפתח יונדאי",
+      "path": "/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%99%d7%95%d7%a0%d7%93%d7%90%d7%99/",
+      "canonical": "https://3locksmiths.co.il/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%99%d7%95%d7%a0%d7%93%d7%90%d7%99/",
+      "brand": "יונדאי",
+      "relatedServices": [
+        98,
+        99,
+        100,
+        101,
+        109,
+        95
+      ],
+      "relatedLocations": []
+    },
+    {
+      "id": 123,
+      "kind": "brand-key",
+      "title": "שכפול מפתח מיצובישי",
+      "keyword": "שכפול מפתח מיצובישי",
+      "path": "/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%9e%d7%99%d7%a6%d7%95%d7%91%d7%99%d7%a9%d7%99/",
+      "canonical": "https://3locksmiths.co.il/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%9e%d7%99%d7%a6%d7%95%d7%91%d7%99%d7%a9%d7%99/",
+      "brand": "מיצובישי",
+      "relatedServices": [
+        98,
+        99,
+        100,
+        101,
+        109,
+        95
+      ],
+      "relatedLocations": []
+    },
+    {
+      "id": 124,
+      "kind": "brand-key",
+      "title": "שכפול מפתח סובארו",
+      "keyword": "שכפול מפתח סובארו",
+      "path": "/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%a1%d7%95%d7%91%d7%90%d7%a8%d7%95/",
+      "canonical": "https://3locksmiths.co.il/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%a1%d7%95%d7%91%d7%90%d7%a8%d7%95/",
+      "brand": "סובארו",
+      "relatedServices": [
+        98,
+        99,
+        100,
+        101,
+        109,
+        95
+      ],
+      "relatedLocations": []
+    },
+    {
+      "id": 125,
+      "kind": "brand-key",
+      "title": "שכפול מפתח מרצדס",
+      "keyword": "שכפול מפתח מרצדס",
+      "path": "/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%9e%d7%a8%d7%a6%d7%93%d7%a1/",
+      "canonical": "https://3locksmiths.co.il/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%9e%d7%a8%d7%a6%d7%93%d7%a1/",
+      "brand": "מרצדס",
+      "relatedServices": [
+        98,
+        99,
+        100,
+        101,
+        109,
+        95
+      ],
+      "relatedLocations": []
+    },
+    {
+      "id": 126,
+      "kind": "brand-key",
+      "title": "שכפול מפתח הונדה",
+      "keyword": "שכפול מפתח הונדה",
+      "path": "/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%94%d7%95%d7%a0%d7%93%d7%94/",
+      "canonical": "https://3locksmiths.co.il/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%94%d7%95%d7%a0%d7%93%d7%94/",
+      "brand": "הונדה",
+      "relatedServices": [
+        98,
+        99,
+        100,
+        101,
+        109,
+        95
+      ],
+      "relatedLocations": []
+    },
+    {
+      "id": 127,
+      "kind": "brand-key",
+      "title": "שכפול מפתח אופל",
+      "keyword": "שכפול מפתח אופל",
+      "path": "/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%90%d7%95%d7%a4%d7%9c/",
+      "canonical": "https://3locksmiths.co.il/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%90%d7%95%d7%a4%d7%9c/",
+      "brand": "אופל",
+      "relatedServices": [
+        98,
+        99,
+        100,
+        101,
+        109,
+        95
+      ],
+      "relatedLocations": []
+    },
+    {
+      "id": 128,
+      "kind": "brand-key",
+      "title": "שכפול מפתח במוו",
+      "keyword": "שכפול מפתח במוו",
+      "path": "/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%91%d7%9e%d7%95%d7%95/",
+      "canonical": "https://3locksmiths.co.il/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%91%d7%9e%d7%95%d7%95/",
+      "brand": "במוו",
+      "relatedServices": [
+        98,
+        99,
+        100,
+        101,
+        109,
+        95
+      ],
+      "relatedLocations": []
+    },
+    {
+      "id": 129,
+      "kind": "brand-key",
+      "title": "שכפול מפתח פולקסווגן",
+      "keyword": "שכפול מפתח פולקסווגן",
+      "path": "/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%a4%d7%95%d7%9c%d7%a7%d7%a1%d7%95%d7%95%d7%92%d7%9f/",
+      "canonical": "https://3locksmiths.co.il/services/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%a4%d7%95%d7%9c%d7%a7%d7%a1%d7%95%d7%95%d7%92%d7%9f/",
+      "brand": "פולקסווגן",
+      "relatedServices": [
+        98,
+        99,
+        100,
+        101,
+        109,
+        95
+      ],
+      "relatedLocations": []
+    },
+    {
+      "id": 137,
+      "kind": "location",
+      "title": "שכפול מפתח בתל אביב",
+      "keyword": "שכפול מפתח בתל אביב",
+      "path": "/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%aa%d7%9c-%d7%90%d7%91%d7%99%d7%91/",
+      "canonical": "https://3locksmiths.co.il/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%aa%d7%9c-%d7%90%d7%91%d7%99%d7%91/",
+      "city": "תל אביב",
+      "relatedServices": [
+        95,
+        93,
+        94,
+        96
+      ],
+      "relatedLocations": [
+        138,
+        139,
+        140,
+        141,
+        142
+      ]
+    },
+    {
+      "id": 138,
+      "kind": "location",
+      "title": "שכפול מפתח בקריות",
+      "keyword": "שכפול מפתח בקריות",
+      "path": "/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%a7%d7%a8%d7%99%d7%95%d7%aa/",
+      "canonical": "https://3locksmiths.co.il/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%a7%d7%a8%d7%99%d7%95%d7%aa/",
+      "city": "קריות",
+      "relatedServices": [
+        95,
+        93,
+        94,
+        96
+      ],
+      "relatedLocations": [
+        137,
+        139,
+        140,
+        141,
+        142
+      ]
+    },
+    {
+      "id": 139,
+      "kind": "location",
+      "title": "שכפול מפתח בחדרה",
+      "keyword": "שכפול מפתח בחדרה",
+      "path": "/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%97%d7%93%d7%a8%d7%94/",
+      "canonical": "https://3locksmiths.co.il/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%97%d7%93%d7%a8%d7%94/",
+      "city": "חדרה",
+      "relatedServices": [
+        95,
+        93,
+        94,
+        96
+      ],
+      "relatedLocations": [
+        137,
+        138,
+        140,
+        141,
+        142
+      ]
+    },
+    {
+      "id": 140,
+      "kind": "location",
+      "title": "שכפול מפתח בנתניה",
+      "keyword": "שכפול מפתח בנתניה",
+      "path": "/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%91%d7%a0%d7%aa%d7%a0%d7%99%d7%94/",
+      "canonical": "https://3locksmiths.co.il/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%91%d7%a0%d7%aa%d7%a0%d7%99%d7%94/",
+      "city": "נתניה",
+      "relatedServices": [
+        95,
+        93,
+        94,
+        96
+      ],
+      "relatedLocations": [
+        137,
+        138,
+        139,
+        141,
+        142
+      ]
+    },
+    {
+      "id": 141,
+      "kind": "location",
+      "title": "שכפול מפתח בחיפה",
+      "keyword": "שכפול מפתח בחיפה",
+      "path": "/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%97%d7%99%d7%a4%d7%94/",
+      "canonical": "https://3locksmiths.co.il/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%97%d7%99%d7%a4%d7%94/",
+      "city": "חיפה",
+      "relatedServices": [
+        95,
+        93,
+        94,
+        96
+      ],
+      "relatedLocations": [
+        137,
+        138,
+        139,
+        140,
+        142
+      ]
+    },
+    {
+      "id": 142,
+      "kind": "location",
+      "title": "שכפול מפתח בפתח תקווה",
+      "keyword": "שכפול מפתח בפתח תקווה",
+      "path": "/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%a4%d7%aa%d7%97-%d7%aa%d7%a7%d7%95%d7%95%d7%94/",
+      "canonical": "https://3locksmiths.co.il/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%a4%d7%aa%d7%97-%d7%aa%d7%a7%d7%95%d7%95%d7%94/",
+      "city": "פתח תקווה",
+      "relatedServices": [
+        95,
+        93,
+        94,
+        96
+      ],
+      "relatedLocations": [
+        137,
+        138,
+        139,
+        140,
+        141
+      ]
+    },
+    {
+      "id": 143,
+      "kind": "location",
+      "title": "שכפול מפתח בת ים",
+      "keyword": "שכפול מפתח בת ים",
+      "path": "/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%91%d7%aa-%d7%99%d7%9d/",
+      "canonical": "https://3locksmiths.co.il/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%91%d7%aa-%d7%99%d7%9d/",
+      "city": "בת ים",
+      "relatedServices": [
+        95,
+        93,
+        94,
+        96
+      ],
+      "relatedLocations": [
+        137,
+        138,
+        139,
+        140,
+        141
+      ]
+    },
+    {
+      "id": 144,
+      "kind": "location",
+      "title": "שכפול מפתח באר שבע",
+      "keyword": "שכפול מפתח באר שבע",
+      "path": "/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%91%d7%90%d7%a8-%d7%a9%d7%91%d7%a2/",
+      "canonical": "https://3locksmiths.co.il/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%91%d7%90%d7%a8-%d7%a9%d7%91%d7%a2/",
+      "city": "באר שבע",
+      "relatedServices": [
+        95,
+        93,
+        94,
+        96
+      ],
+      "relatedLocations": [
+        137,
+        138,
+        139,
+        140,
+        141
+      ]
+    },
+    {
+      "id": 146,
+      "kind": "location",
+      "title": "שכפול מפתח בירושלים",
+      "keyword": "שכפול מפתח בירושלים",
+      "path": "/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%91%d7%99%d7%a8%d7%95%d7%a9%d7%9c%d7%99%d7%9d/",
+      "canonical": "https://3locksmiths.co.il/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%91%d7%99%d7%a8%d7%95%d7%a9%d7%9c%d7%99%d7%9d/",
+      "city": "ירושלים",
+      "relatedServices": [
+        95,
+        93,
+        94,
+        96
+      ],
+      "relatedLocations": [
+        137,
+        138,
+        139,
+        140,
+        141
+      ]
+    },
+    {
+      "id": 147,
+      "kind": "location",
+      "title": "שכפול מפתחות בחולון",
+      "keyword": "שכפול מפתחות בחולון",
+      "path": "/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97%d7%95%d7%aa-%d7%97%d7%95%d7%9c%d7%95%d7%9f/",
+      "canonical": "https://3locksmiths.co.il/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97%d7%95%d7%aa-%d7%97%d7%95%d7%9c%d7%95%d7%9f/",
+      "city": "חולון",
+      "relatedServices": [
+        95,
+        93,
+        94,
+        96
+      ],
+      "relatedLocations": [
+        137,
+        138,
+        139,
+        140,
+        141
+      ]
+    },
+    {
+      "id": 148,
+      "kind": "location",
+      "title": "שכפול מפתחות בכפר סבא",
+      "keyword": "שכפול מפתחות בכפר סבא",
+      "path": "/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97%d7%95%d7%aa-%d7%9b%d7%a4%d7%a8-%d7%a1%d7%91%d7%90/",
+      "canonical": "https://3locksmiths.co.il/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97%d7%95%d7%aa-%d7%9b%d7%a4%d7%a8-%d7%a1%d7%91%d7%90/",
+      "city": "כפר סבא",
+      "relatedServices": [
+        95,
+        93,
+        94,
+        96
+      ],
+      "relatedLocations": [
+        137,
+        138,
+        139,
+        140,
+        141
+      ]
+    },
+    {
+      "id": 149,
+      "kind": "location",
+      "title": "שכפול מפתחות נתניה",
+      "keyword": "שכפול מפתחות נתניה",
+      "path": "/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97%d7%95%d7%aa-%d7%91%d7%a0%d7%aa%d7%a0%d7%99%d7%94/",
+      "canonical": "https://3locksmiths.co.il/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97%d7%95%d7%aa-%d7%91%d7%a0%d7%aa%d7%a0%d7%99%d7%94/",
+      "city": "נתניה",
+      "relatedServices": [
+        95,
+        93,
+        94,
+        96
+      ],
+      "relatedLocations": [
+        137,
+        138,
+        139,
+        140,
+        141
+      ]
+    },
+    {
+      "id": 150,
+      "kind": "location",
+      "title": "שכפול מפתח בראשון לציון",
+      "keyword": "שכפול מפתח בראשון לציון",
+      "path": "/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%a8%d7%90%d7%a9%d7%95%d7%9f-%d7%9c%d7%a6%d7%99%d7%95%d7%9f/",
+      "canonical": "https://3locksmiths.co.il/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%a8%d7%90%d7%a9%d7%95%d7%9f-%d7%9c%d7%a6%d7%99%d7%95%d7%9f/",
+      "city": "ראשון לציון",
+      "relatedServices": [
+        95,
+        93,
+        94,
+        96
+      ],
+      "relatedLocations": [
+        137,
+        138,
+        139,
+        140,
+        141
+      ]
+    },
+    {
+      "id": 151,
+      "kind": "location",
+      "title": "שכפול מפתח בחולון",
+      "keyword": "שכפול מפתח בחולון",
+      "path": "/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%97%d7%95%d7%9c%d7%95%d7%9f/",
+      "canonical": "https://3locksmiths.co.il/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%97%d7%95%d7%9c%d7%95%d7%9f/",
+      "city": "חולון",
+      "relatedServices": [
+        95,
+        93,
+        94,
+        96
+      ],
+      "relatedLocations": [
+        137,
+        138,
+        139,
+        140,
+        141
+      ]
+    },
+    {
+      "id": 153,
+      "kind": "location",
+      "title": "שכפול מפתח ברמת גן",
+      "keyword": "שכפול מפתח ברמת גן",
+      "path": "/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%a8%d7%9e%d7%aa-%d7%92%d7%9f/",
+      "canonical": "https://3locksmiths.co.il/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%a8%d7%9e%d7%aa-%d7%92%d7%9f/",
+      "city": "רמת גן",
+      "relatedServices": [
+        95,
+        93,
+        94,
+        96
+      ],
+      "relatedLocations": [
+        137,
+        138,
+        139,
+        140,
+        141
+      ]
+    },
+    {
+      "id": 154,
+      "kind": "location",
+      "title": "שכפול מפתח בגבעתיים",
+      "keyword": "שכפול מפתח בגבעתיים",
+      "path": "/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%92%d7%91%d7%a2%d7%aa%d7%99%d7%99%d7%9d/",
+      "canonical": "https://3locksmiths.co.il/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97-%d7%92%d7%91%d7%a2%d7%aa%d7%99%d7%99%d7%9d/",
+      "city": "גבעתיים",
+      "relatedServices": [
+        95,
+        93,
+        94,
+        96
+      ],
+      "relatedLocations": [
+        137,
+        138,
+        139,
+        140,
+        141
+      ]
+    },
+    {
+      "id": 158,
+      "kind": "location",
+      "title": "שכפול מפתחות ברעננה",
+      "keyword": "שכפול מפתחות ברעננה",
+      "path": "/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97%d7%95%d7%aa-%d7%a8%d7%a2%d7%a0%d7%a0%d7%94/",
+      "canonical": "https://3locksmiths.co.il/locations/%d7%a9%d7%9b%d7%a4%d7%95%d7%9c-%d7%9e%d7%a4%d7%aa%d7%97%d7%95%d7%aa-%d7%a8%d7%a2%d7%a0%d7%a0%d7%94/",
+      "city": "רעננה",
+      "relatedServices": [
+        95,
+        93,
+        94,
+        96
+      ],
+      "relatedLocations": [
+        137,
+        138,
+        139,
+        140,
+        141
+      ]
+    },
+    {
+      "id": 189,
+      "kind": "core",
+      "title": "קודן לרכב",
+      "keyword": "קודן לרכב",
+      "path": "/%d7%a7%d7%95%d7%93%d7%9f-%d7%9c%d7%a8%d7%9b%d7%91/",
+      "canonical": "https://3locksmiths.co.il/%d7%a7%d7%95%d7%93%d7%9f-%d7%9c%d7%a8%d7%9b%d7%91/",
+      "relatedServices": [
+        93,
+        94,
+        96,
+        97,
+        95
+      ],
+      "relatedLocations": [
+        137,
+        138,
+        139
+      ]
+    },
+    {
+      "id": 192,
+      "kind": "service",
+      "title": "דלת פלדלת",
+      "keyword": "דלת פלדלת",
+      "path": "/services/%d7%93%d7%9c%d7%aa-%d7%a4%d7%9c%d7%93%d7%9c%d7%aa/",
+      "canonical": "https://3locksmiths.co.il/services/%d7%93%d7%9c%d7%aa-%d7%a4%d7%9c%d7%93%d7%9c%d7%aa/",
+      "relatedServices": [
+        93,
+        94,
+        96,
+        97,
+        115,
+        95
+      ],
+      "relatedLocations": []
+    },
+    {
+      "id": 193,
+      "kind": "service",
+      "title": "דלת ממד",
+      "keyword": "דלת ממד",
+      "path": "/services/%d7%93%d7%9c%d7%aa-%d7%9e%d7%9e%d7%93/",
+      "canonical": "https://3locksmiths.co.il/services/%d7%93%d7%9c%d7%aa-%d7%9e%d7%9e%d7%93/",
+      "relatedServices": [
+        93,
+        94,
+        96,
+        97,
+        115,
+        95
+      ],
+      "relatedLocations": []
+    },
+    {
+      "id": 194,
+      "kind": "service",
+      "title": "מנעול רב בריח",
+      "keyword": "מנעול רב בריח",
+      "path": "/services/%d7%9e%d7%a0%d7%a2%d7%95%d7%9c-%d7%a8%d7%91-%d7%91%d7%a8%d7%99%d7%97/",
+      "canonical": "https://3locksmiths.co.il/services/%d7%9e%d7%a0%d7%a2%d7%95%d7%9c-%d7%a8%d7%91-%d7%91%d7%a8%d7%99%d7%97/",
+      "relatedServices": [
+        93,
+        94,
+        96,
+        97,
+        115,
+        95
+      ],
+      "relatedLocations": []
+    },
+    {
+      "id": 196,
+      "kind": "service",
+      "title": "מולטילוק",
+      "keyword": "מולטילוק",
+      "path": "/services/%d7%9e%d7%95%d7%9c%d7%98%d7%99%d7%9c%d7%95%d7%a7/",
+      "canonical": "https://3locksmiths.co.il/services/%d7%9e%d7%95%d7%9c%d7%98%d7%99%d7%9c%d7%95%d7%a7/",
+      "relatedServices": [
+        93,
+        94,
+        96,
+        97,
+        115,
+        95
+      ],
+      "relatedLocations": []
+    }
+  ]
+}

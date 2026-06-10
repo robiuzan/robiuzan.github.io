@@ -1,0 +1,104 @@
+// Build content/enriched/_manifest.json — the page list + classification that drives
+// content authoring and the enrich build. Read-only on site.json. Run: node scripts/build-manifest.mjs
+import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
+import { join, dirname } from "node:path";
+import { fileURLToPath } from "node:url";
+import he from "he";
+
+const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
+const ENRICHED = join(ROOT, "content", "enriched");
+mkdirSync(ENRICHED, { recursive: true });
+
+const site = JSON.parse(readFileSync(join(ROOT, "content", "site.json"), "utf8"));
+
+const REFERENCE_ID = 95; // already-rich exemplar, not enriched
+const EXCLUDE = new Set([1, 2]); // hello-world, sample-page
+
+// Known Hebrew car brands (for brand-key classification). Apostrophes normalized to straight '.
+const BRANDS = ["פולקסווגן", "אופל", "הונדה", "מרצדס", "סובארו", "מיצובישי", "סוזוקי",
+  "יונדאי", "פיג'ו", "סיטרואן", "מאזדה", "טויוטה", "רנו", "שברולט", "סקודה", "פורד", "קיה", "במוו"];
+
+// Explicit city list — avoids stripping a leading ב that is part of the city name (בת ים, באר שבע).
+const CITIES = ["תל אביב", "באר שבע", "פתח תקווה", "ראשון לציון", "רמת גן", "כפר סבא", "בת ים",
+  "גבעתיים", "חדרה", "חולון", "חיפה", "ירושלים", "נתניה", "קריות", "רעננה", "בני ברק", "אשדוד", "הרצליה"];
+
+// Normalize: decode entities + fold curly apostrophes/quotes to straight ' so matching is reliable.
+const dec = (s) => he.decode(s || "").replace(/[‘’]/g, "'").replace(/\s+/g, " ").trim();
+
+function classify(p) {
+  const path = p.path || "";
+  const title = dec(p.title);
+  if (p.isFront) return null;
+  if (path.startsWith("/step/")) return null;
+  if (EXCLUDE.has(p.id)) return null;
+  if (p.id === REFERENCE_ID) return null;
+
+  if (path.startsWith("/locations/")) {
+    const city = CITIES.find((c) => title.includes(c))
+      || title.replace(/^שכפול\s+מפתח(?:ות)?\s+ב/, "").trim(); // fallback
+    return { kind: "location", city };
+  }
+  if (path.startsWith("/services/")) {
+    const brand = BRANDS.find((b) => title.includes(b));
+    return brand ? { kind: "brand-key", brand } : { kind: "service" };
+  }
+  return { kind: "core" };
+}
+
+const rows = [];
+for (const p of site.pages) {
+  const c = classify(p);
+  if (!c) continue;
+  rows.push({
+    id: p.id,
+    kind: c.kind,
+    title: dec(p.title),
+    keyword: dec(p.title),
+    path: p.path,
+    canonical: p.seo?.canonical || "",
+    ...(c.brand ? { brand: c.brand } : {}),
+    ...(c.city ? { city: c.city } : {}),
+  });
+}
+
+// Attach related-link candidates (ids) to drive the internal-link silo.
+const byKind = (k) => rows.filter((r) => r.kind === k);
+const brandRows = byKind("brand-key");
+const serviceRows = byKind("service");
+const locationRows = byKind("location");
+const genericServiceLinks = serviceRows.slice(0, 6); // door/lock/generic services
+const topLocations = locationRows.slice(0, 6);
+
+for (const r of rows) {
+  const relatedServices = [];
+  const relatedLocations = [];
+  if (r.kind === "brand-key") {
+    // 5 sibling brands + parent ref (95) + a couple generic services
+    relatedServices.push(...brandRows.filter((b) => b.id !== r.id).slice(0, 5).map((b) => b.id));
+    relatedServices.push(REFERENCE_ID);
+  } else if (r.kind === "service") {
+    relatedServices.push(...serviceRows.filter((s) => s.id !== r.id).slice(0, 5).map((s) => s.id), REFERENCE_ID);
+  } else if (r.kind === "location") {
+    relatedLocations.push(...locationRows.filter((l) => l.id !== r.id).slice(0, 5).map((l) => l.id));
+    relatedServices.push(REFERENCE_ID, ...genericServiceLinks.slice(0, 3).map((s) => s.id));
+  } else {
+    relatedServices.push(...serviceRows.slice(0, 4).map((s) => s.id), REFERENCE_ID);
+    relatedLocations.push(...topLocations.slice(0, 3).map((l) => l.id));
+  }
+  r.relatedServices = [...new Set(relatedServices)];
+  r.relatedLocations = [...new Set(relatedLocations)];
+}
+
+// id -> {path,title} lookup so authors can resolve related ids to label+href.
+const lookup = {};
+for (const p of site.pages) lookup[p.id] = { path: p.path, title: dec(p.title) };
+
+const manifest = { referenceId: REFERENCE_ID, count: rows.length, lookup, pages: rows };
+writeFileSync(join(ENRICHED, "_manifest.json"), JSON.stringify(manifest, null, 2), "utf8");
+
+const byK = rows.reduce((a, r) => ((a[r.kind] = (a[r.kind] || 0) + 1), a), {});
+console.log(`manifest: ${rows.length} pages →`, byK);
+console.log("brands:", brandRows.map((b) => `${b.id}:${b.brand}`).join(", "));
+console.log("locations:", locationRows.map((l) => `${l.id}:${l.city}`).join(", "));
+console.log("services(generic):", serviceRows.map((s) => `${s.id}:${s.keyword}`).join(", "));
+console.log("core:", byKind("core").map((s) => `${s.id}:${s.keyword}`).join(", "));

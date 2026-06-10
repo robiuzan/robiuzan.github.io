@@ -34,10 +34,14 @@ React stack. It is **NOT** a redesign. Every decision is judged against one ques
 ## ⚠️ Actual source architecture (discovered) & migration approach
 The source is **NOT** a Gutenberg/block site. It is a **custom theme `gogo`** (`/wp-content/themes/gogo/`)
 with a server-side page builder + heavy custom jQuery. Consequences:
-- The REST API returns **empty `content.rendered`** for all 7 inner pages, and `acf` is empty. The design +
+- The REST API returns **empty `content.rendered`** for all inner pages, and `acf` is empty. The design +
   content is rendered by theme PHP from post-meta the REST API does **not** expose.
 - **Therefore the page bodies are sourced from the LIVE rendered HTML**, not REST content. REST is still used for
   the page list (slugs/permalinks/titles), media, and structure.
+- **Content is spread across multiple public post types**, not just `pages`. `scripts/scrape.mjs` captures them all
+  (`CONTENT_TYPES`): `pages` (9), `posts` (1), `services` (`/services/<slug>/`), `locations` (`/locations/<slug>/`),
+  `step` (`/step/<slug>/`, price-calculator steps). ~59 pages total. One `services` item returns HTTP 500 on the
+  live site (broken at the source) and is skipped; the scraper retries transient errors and skips source-broken pages.
 - Structure per page: `<header class="template-header">`, `<nav class="nav-bottom">`/`<nav class="nav-side">`,
   `<main class="page-template-builder">`, `<section class="section-header-banner">`, `<footer class="footer">`.
 - Interactive features rely on jQuery: `nav.js` (mobile menu), `owl.carousel`, `magnific-popup` (CF7 contact

@@ -17,6 +17,10 @@ export const metadata: Metadata = {
     icon: iconLink?.href,
     apple: appleLink?.href,
   },
+  // Google Search Console site verification → <meta name="google-site-verification" ...>
+  verification: {
+    google: "ifGKeC-eWQKeDqM1qDUOgGmDODCTE1vSalAmg7bGmEI",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

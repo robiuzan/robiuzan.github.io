@@ -68,6 +68,17 @@ function serviceSchema(data, page) {
   });
 }
 
+function howToSchema(data) {
+  if (!data.process?.length) return null;
+  return J({
+    "@context": "https://schema.org", "@type": "HowTo",
+    name: data.keyword,
+    step: data.process.map((s, i) => ({
+      "@type": "HowToStep", position: i + 1, name: s.title, text: s.text,
+    })),
+  });
+}
+
 function faqSchema(data) {
   if (!data.faq?.items?.length) return null;
   return J({
@@ -114,7 +125,7 @@ for (const data of enriched) {
   if (data.seo?.description) page.seo.description = data.seo.description;
 
   // schema
-  page.jsonLd = [breadcrumbSchema(data, page), serviceSchema(data, page), faqSchema(data)].filter(Boolean);
+  page.jsonLd = [breadcrumbSchema(data, page), serviceSchema(data, page), howToSchema(data), faqSchema(data)].filter(Boolean);
 
   // assertions
   const h1count = (page.bodyHtml.match(/<h1[\s>]/g) || []).length;

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./enrich.css";
 import SiteAssets from "@/components/SiteAssets";
 import { getSite } from "@/lib/content";
 

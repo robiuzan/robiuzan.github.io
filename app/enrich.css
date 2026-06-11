@@ -1,0 +1,57 @@
+/*
+ * Polish for the value-add sections rendered by lib/enrich/render.mjs.
+ * Scoped under .content-blocks and targets ONLY new classes (.step-num, .enrich-stat*,
+ * .enrich-guide …) so it never overrides the vendored gogo theme CSS. Uses the theme's
+ * brand accent var (--acsent-color, #009f3c). Loaded site-wide but only affects pages
+ * that actually render these new sections.
+ */
+
+/* "How it works" — numbered step badge (replaces the icon img in the advantages grid). */
+.content-blocks .section-advantages .icon .step-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--acsent-color, #009f3c);
+  color: #fff;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1;
+}
+.content-blocks .step-time {
+  color: var(--acsent-color, #009f3c);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* "By the numbers" — large accent stat (specificity beats gogo's grid h3 rule). */
+.content-blocks .enrich-stat .enrich-stat__num {
+  color: var(--acsent-color, #009f3c);
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 0 0 6px;
+}
+
+/* Long-form guide blocks — comfortable reading width + visible bullet lists. */
+.content-blocks .enrich-guide .post-content {
+  max-width: 100%;
+}
+.content-blocks .enrich-guide h3.wp-block-heading {
+  margin-top: 26px;
+}
+.content-blocks .enrich-guide ul.wp-block-list {
+  margin: 12px 0;
+  padding-inline-start: 1.4em;
+}
+.content-blocks .enrich-guide ul.wp-block-list li {
+  list-style: disc;
+  margin: 6px 0;
+}
+
+/* Light zebra striping on spec/comparison tables. */
+.content-blocks .wp-block-table tbody tr:nth-child(even) {
+  background: rgba(0, 0, 0, 0.03);
+}

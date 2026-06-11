@@ -25,6 +25,48 @@ export interface FaqItem {
   a: string;
 }
 
+// --- value-add sections (all optional; renderers skip when absent) ---
+export interface ProcessStep {
+  title: string;
+  text: string;
+  time?: string;
+}
+
+export interface SpecsTable {
+  caption?: string;
+  intro?: string;
+  columns: string[];
+  rows: string[][];
+}
+
+export interface ScenarioCard {
+  title: string;
+  text: string;
+}
+
+export interface GuideSubsection {
+  heading: string;
+  paragraphs?: string[];
+  bullets?: string[];
+}
+
+export interface GuideSection {
+  heading: string;
+  paragraphs?: string[];
+  bullets?: string[];
+  subsections?: GuideSubsection[];
+}
+
+export interface StatItem {
+  value: string;
+  label: string;
+}
+
+export interface AreaItem {
+  label: string;
+  href: string;
+}
+
 export interface EnrichedPage {
   id: number; // matches SitePage.id in content/site.json
   kind: PageKind;
@@ -40,4 +82,12 @@ export interface EnrichedPage {
   faq: { subtitle?: string; items: FaqItem[] };
   related: { services: RelatedLink[]; locations: RelatedLink[] };
   cta: { heading: string; body?: string };
+
+  // Optional value-add sections (see render.mjs). Absent → section skipped.
+  process?: ProcessStep[];
+  specsTable?: SpecsTable;
+  scenarios?: ScenarioCard[];
+  guides?: GuideSection[];
+  stats?: StatItem[];
+  areas?: AreaItem[];
 }

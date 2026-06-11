@@ -91,3 +91,55 @@
 
 /* ---- Spec/comparison tables: light zebra striping ---- */
 .content-blocks .wp-block-table tbody tr:nth-child(even) { background: rgba(0, 0, 0, 0.03); }
+
+/* ============================================================================
+   Recolor "למה לבחור בנו" (.enrich-why) and "למה אנחנו" (.enrich-stats).
+   Selectors mirror gogo's depth (or add a class) so they win the cascade.
+   ============================================================================ */
+
+/* "למה לבחור בנו" — light, professional feature cards on a soft background. */
+.content-blocks .section-advantages.enrich-why {
+  background: #f4f7fb;
+  background-color: #f4f7fb;
+}
+.content-blocks .section-advantages.enrich-why h2,
+.content-blocks .section-advantages.enrich-why .text,
+.content-blocks .section-advantages.enrich-why .text p {
+  color: var(--dark-font-color, #011532);
+}
+.content-blocks .section-advantages.enrich-why .grid-wrap .grid-item .grid-item-top h3 {
+  color: var(--dark-font-color, #011532);
+}
+.content-blocks .section-advantages.enrich-why .grid-wrap .grid-item .description {
+  color: #5b6b82;
+}
+.content-blocks .section-advantages.enrich-why .section-caption span {
+  border-color: var(--acsent-color, #009f3c);
+  color: var(--acsent-color, #009f3c);
+}
+.content-blocks .section-advantages.enrich-why .grid-wrap .grid-item {
+  background: #ffffff;
+  border: 1px solid #e6eaf2;
+  box-shadow: 0 6px 24px rgba(1, 21, 50, 0.06);
+}
+.content-blocks .section-advantages.enrich-why .grid-wrap .grid-item:hover {
+  border-color: var(--acsent-color, #009f3c);
+  box-shadow: 0 12px 30px rgba(1, 21, 50, 0.10);
+}
+
+/* "למה אנחנו" — refined dark gradient band with subtle glass cards + green accents. */
+.content-blocks .section-advantages.enrich-stats {
+  background: linear-gradient(135deg, #011532 0%, #0a2649 100%);
+  background-color: #011532;
+}
+.content-blocks .section-advantages.enrich-stats .grid-wrap .grid-item {
+  background: rgba(255, 255, 255, 0.045);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+.content-blocks .section-advantages.enrich-stats .grid-wrap .grid-item:hover {
+  border-color: var(--acsent-color, #009f3c);
+  background: rgba(255, 255, 255, 0.075);
+}
+.content-blocks .section-advantages.enrich-stats .grid-wrap .grid-item .icon {
+  background: rgba(0, 159, 60, 0.20);
+}

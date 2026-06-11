@@ -42,6 +42,7 @@ export interface SpecsTable {
 export interface ScenarioCard {
   title: string;
   text: string;
+  icon?: string; // Font Awesome 5 name without the "fa-" prefix, e.g. "key", "wrench"
 }
 
 export interface GuideSubsection {
@@ -55,11 +56,14 @@ export interface GuideSection {
   paragraphs?: string[];
   bullets?: string[];
   subsections?: GuideSubsection[];
+  box?: boolean; // render as an accent-tinted callout box
+  columns?: boolean; // render paragraphs in 2 columns (desktop)
 }
 
 export interface StatItem {
   value: string;
   label: string;
+  icon?: string; // Font Awesome 5 name without the "fa-" prefix
 }
 
 export interface AreaItem {

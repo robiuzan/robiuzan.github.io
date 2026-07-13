@@ -1,0 +1,35 @@
+{
+  "domain": "3locksmiths.co.il",
+  "url": "https://3locksmiths.co.il",
+  "brandName": "שלושה מנעולנים",
+  "brandNameEn": "3 Locksmiths",
+  "legalName": null,
+  "locale": "he-IL",
+  "dir": "rtl",
+  "foundedYear": null,
+  "tagline": null,
+  "shortPitch": null,
+  "contact": {
+    "phoneDisplay": "055-6601006",
+    "phoneE164": "+972556601006",
+    "whatsappE164": "+972556601006",
+    "email": "info@3locksmiths.co.il",
+    "formAccessKey": "060abaf9-eb75-4621-8488-a3a15332e37e",
+    "phoneOverride": false
+  },
+  "brand": {
+    "themeColor": null,
+    "primary": null,
+    "secondary": null,
+    "accent": null,
+    "fontHeading": "Rubik",
+    "fontBody": "Rubik"
+  },
+  "schema": {
+    "type": "Locksmith",
+    "priceRange": "₪₪",
+    "areaServed": null,
+    "sameAs": []
+  },
+  "analytics": { "gtmId": "GTM-5K3WQN8W", "googleSiteVerification": null }
+}

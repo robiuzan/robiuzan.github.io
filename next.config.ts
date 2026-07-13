@@ -13,6 +13,11 @@ const nextConfig: NextConfig = {
   // The whole site is SSG, so this exports clean HTML + the vendored assets.
   output: "export",
 
+  // Shared front-end kit ships raw TS (main/types → src/*.ts), so Next must transpile it.
+  // Installed for future use; the current snapshot render does not import it (contact links
+  // are static in the scraped content/site.json), so this is an inert no-op for now.
+  transpilePackages: ["@ishub/site-kit"],
+
   // Mirror the WordPress permalink structure exactly — every page URL keeps its
   // trailing slash (e.g. /מנעולן-רכב/), matching the source canonical links 1:1.
   // With `output: export` this writes each route as <slug>/index.html.

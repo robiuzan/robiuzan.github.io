@@ -1,46 +1,38 @@
-name: Deploy to GitHub Pages
+name: Redirect to production
+
+# RETIRED ORIGIN. This repo used to publish a Next.js build of 3locksmiths.co.il to GitHub
+# Pages. Production moved to Cloudflare Pages (direct upload via the fleet's
+# ops/deploy-site.ps1), which left this a stale duplicate of the live site. A user-site
+# repo (<user>.github.io) cannot have Pages turned off, so it now publishes a single
+# redirect page instead. Nothing here builds the app any more.
 
 on:
   push:
     branches: [main]
   workflow_dispatch:
 
-# Allow the workflow to publish to GitHub Pages via OIDC.
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Only one concurrent Pages deployment; don't cancel an in-progress one.
 concurrency:
   group: pages
   cancel-in-progress: false
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: npm
-      - run: npm ci
-      - name: Build static export
-        run: npm run build
-        env:
-          NEXT_PUBLIC_WP_URL: https://3locksmiths.co.il
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: out
-
   deploy:
-    needs: build
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: redirect
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: redirect
       - id: deployment
         uses: actions/deploy-pages@v4
